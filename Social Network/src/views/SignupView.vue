@@ -6,7 +6,7 @@
                 <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p id="tologin" class="font-bold">Already have an account?<a href="#" class="underline"> Log in </a>
+                <p id="tologin" class="font-bold">Already have an account?<router-link to="/login" class="underline">Log In</router-link>
                     here</p>
             </div>
         </div>
