@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto grid grid-cols-2 gap-4">
         <div class="main-left">
             <div class="p-12 bg-white border border-gray-200 rounded-lg space-y-6">
-                <h1 id="title" class="text-2xl font-medium">Log</h1>
+                <h1 id="title" class="text-2xl font-medium">Log In</h1>
                 <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
