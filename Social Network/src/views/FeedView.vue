@@ -1,3 +1,14 @@
+<script>
+import PeopleYouMayKnow from '@/components/PeopleYouMayKnow.vue';
+import Trends from '@/components/Trends.vue';
+export default {
+    name: 'FeedView',
+    components: {
+        PeopleYouMayKnow,
+        Trends
+    }
+}
+</script>
 <template>
     <div class="max-w-7xl mx-auto grid grid-cols-4 gap-4">
         <div class="main-left col-span-1">
@@ -107,69 +118,8 @@
             </div>
         </div>
         <div class="main-right col-span-1 space-y-4">
-            <div class="p-4 bg-white border border-gray-200 rounded-lg space-y-4">
-                <h1 class="text-2xl">People you may know</h1>
-                <div class="flex justify-between border-y border-gray-100 py-2">
-                    <div class="flex items-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
-                            alt="Profile Picture" class="h-[40px] rounded-full">
-                        <h1 class="font-semibold ml-2">Charles Leclerc</h1>
-                    </div>
-                    <div class="flex items-center">
-                        <button class="bg-blue-600 py-2 px-4 text-white rounded-lg">Show</button>
-                    </div>
-                </div>
-                <div class="flex justify-between border-y border-gray-100 py-2">
-                    <div class="flex items-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
-                            alt="Profile Picture" class="h-[40px] rounded-full">
-                        <h1 class="font-semibold ml-2">Lewis Hamilton</h1>
-                    </div>
-                    <div class="flex items-center">
-                        <button class="bg-blue-600 py-2 px-4 text-white rounded-lg">Show</button>
-                    </div>
-                </div>
-                <div class="flex justify-between border-y border-gray-100 py-2">
-                    <div class="flex items-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
-                            alt="Profile Picture" class="h-[40px] rounded-full">
-                        <h1 class="font-semibold ml-2">Max Verstappen</h1>
-                    </div>
-                    <div class="flex items-center">
-                        <button class="bg-blue-600 py-2 px-4 text-white rounded-lg">Show</button>
-                    </div>
-                </div>
-            </div>
-            <div class="p-4 bg-white border border-gray-200 rounded-lg space-y-4">
-                <h1 class="text-2xl">Trends</h1>
-                <div class="flex justify-between border-y border-gray-100 py-2">
-                    <div class="flex flex-col items-center">
-                        <p class="font-semibold">#FerrariwonMonza</p>
-                        <h1 class="ml-2 text-gray-500">10.2k Posts</h1>
-                    </div>
-                    <div class="flex items-center">
-                        <button class="bg-blue-600 py-2 px-4 text-white rounded-lg">Show</button>
-                    </div>
-                </div>
-                <div class="flex justify-between border-y border-gray-100 py-2">
-                    <div class="flex flex-col items-center">
-                        <p class="font-semibold">#Norrisfumble</p>
-                        <h1 class="ml-2 text-gray-500">8.7k Posts</h1>
-                    </div>
-                    <div class="flex items-center">
-                        <button class="bg-blue-600 py-2 px-4 text-white rounded-lg">Show</button>
-                    </div>
-                </div>
-                <div class="flex justify-between border-y border-gray-100 py-2">
-                    <div class="flex flex-col items-center">
-                        <p class="font-semibold">#ShadowOfTheErdtree</p>
-                        <h1 class="ml-2 text-gray-500">23k Posts</h1>
-                    </div>
-                    <div class="flex items-center">
-                        <button class="bg-blue-600 py-2 px-4 text-white rounded-lg">Show</button>
-                    </div>
-                </div>
-            </div>
+            <PeopleYouMayKnow />
+            <Trends />
         </div>
     </div>
 </template>
