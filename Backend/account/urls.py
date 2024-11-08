@@ -1,7 +1,6 @@
 from django.urls import path
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
-
-from Backend.account import api
+from account import api
 
 urlpatterns = [
     path('login/', TokenObtainPairView.as_view(), name='token_obtain'), #with the data check if user exists and has right credential than provide the token

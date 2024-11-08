@@ -1,10 +1,25 @@
+from .forms import SignupForm
 from django.http import JsonResponse
-from rest_framework.decorators import api_view, authentication_classes, permission_classes 
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
+from .forms import SignupForm
 
-#to override the auth a permission with the new model we created for the user and with the auth app
-
-@api_view(['POST']) #decorator that says we're expacting some data from an api, type post
+@api_view(['POST']) #decorators
+@authentication_classes([]) 
+@permission_classes([])
 def signup(request):
-    data = request.data #assegna i dati della richiesta a una variabile
+    data = request.data
     message = 'success'
+    
+    form = SignupForm({
+        'email': data.get('email'),
+        'name': data.get('name'),
+        'password1': data.get('password1'),
+        'password2': data.get('password2'),
+    })
+    
+    if form.is_valid():
+        form.save()
+    else:
+        message = 'error'
+        
     return JsonResponse({'status': message})
