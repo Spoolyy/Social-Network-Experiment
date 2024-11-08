@@ -38,8 +38,7 @@
                         </div>
                     </template>
                     <div>
-                        <button class="bg-blue-700 text-base py-4 px-6 text-white rounded-lg border border-gray-200"><a
-                                href="#">Sign Up</a></button>
+                        <button class="bg-blue-700 text-base py-4 px-6 text-white rounded-lg border border-gray-200">Sign Up</button>
                     </div>
                 </form>
             </div>
